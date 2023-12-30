@@ -36,3 +36,18 @@ console.log(typeof myFunctioin);
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3 
+
+
+
+
+// *********************2 Types of Memory**************************
+/*
+Stack(Primitive used in stack memory),
+Heap Memory(Non Primitive)
+*/
+
+let myname = "Sakshi"
+let anothername = myname
+anothername = "painuly"
+console.log(myname);
+console.log(anothername);
