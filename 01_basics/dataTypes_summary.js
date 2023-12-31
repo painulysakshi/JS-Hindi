@@ -42,8 +42,8 @@ console.log(typeof anotherId);
 
 // *********************2 Types of Memory**************************
 /*
-Stack(Primitive used in stack memory),
-Heap Memory(Non Primitive)
+Stack(Primitive used in stack memory)[Stack ke under jab bhi aap koi ek chej lenge usska uska aapko ek copy hi milta hai],
+Heap Memory(Non Primitive)[heap ke under aap kuch bhi chij rakhte ho too aapko usska reference milta hai]
 */
 
 let myname = "Sakshi"
@@ -51,3 +51,13 @@ let anothername = myname
 anothername = "painuly"
 console.log(myname);
 console.log(anothername);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+ let userTwo = userOne
+
+ userTwo.email = "sakshi@gmail.com"  //Object ko .(dot) value se acces krte hain
+ console.log(userOne.email);
+ console.log(userTwo.email);
